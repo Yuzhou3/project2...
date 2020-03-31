@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web is a duck</title>
+</head>
+	<style type="text/css">
+		body{
+			padding: 0;
+			margin:0;
+			/*overflow: hidden;*/ 
+			background-color: #50c7ed;
+		}
+
+		.duck{
+			width: 600px;
+			position: absolute;
+			left: 100vw;
+			top: 50vh;
+			transform: translateX(-100%);
+			z-index: 2;
+
+		}
+
+		.duck_one{
+			width: 600px;
+			position: absolute;
+			left: 100vw;
+			top: 50vh;
+			transform: translateX(-100%);
+			z-index: 1;
+
+		}
+
+		.duck_two{
+			width: 600px;
+			position: absolute;
+			left: 100vw;
+			top: 55vh;
+			transform: translateX(-100%);
+			display: none;
+		}
+
+		.duck_three{
+			width: 600px;
+			position: absolute;
+			left: 100vw;
+			top: 40vh;
+			transform: translateX(-100%);
+			display: none;
+		}
+		.duck_four{
+			width: 600px;
+			position: absolute;
+			left: 100vw;
+			top: 35vh;
+			transform: translateX(-100%);
+			display: none;
+		}
+
+		.duck_five{
+			width: 600px;
+			position: absolute;
+			left: 100vw;
+			top: 30vh;
+			transform: translateX(-100%);
+			display: none;
+		}
+
+		.duck_six{
+			width: 500px;
+			position: absolute;
+			left: 100vw;
+			top: 20vh;
+			transform: translateX(-100%);
+			display: none;
+		}
+
+		#video{
+			width: 0;
+			height: 0;
+
+
+
+
+		}
+
+		@media (max-width: 1400px){
+			.duck{z-index: 1;}
+			.duck_one{z-index: 2;}
+		}
+
+		@media (max-width: 1200px){
+			.duck{display: none;}
+			.duck_one{display: none;}
+			.duck_two{display: block;}
+			body{background-color: orange;}
+		}
+
+		@media(max-width: 1000px){
+			.duck{display: none;}
+			.duck_one{display: none;}
+			.duck_two{display: none;}
+			.duck_three{display: block;}
+			body{background-color: #f492b0;}
+		}
+
+		@media(max-width: 800px){
+			.duck{display: none;}
+			.duck_one{display: none;}
+			.duck_two{display: none;}
+			.duck_three{display: none;}
+			.duck_four{display: block;}
+			body{background-color: #2bb673;}
+		}
+
+		@media(max-width: 650px){
+			.duck{display: none;}
+			.duck_one{display: none;}
+			.duck_two{display: none;}
+			.duck_three{display: none;}
+			.duck_four{display: none;}
+			.duck_five{display: block;}
+			body{background-color: #a97c50;}
+		}
+
+		@media(max-width: 500px){
+			.duck{display: none;}
+			.duck_one{display: none;}
+			.duck_two{display: none;}
+			.duck_three{display: none;}
+			.duck_four{display: none;}
+			.duck_five{display: none;}
+			.duck_six{display: block;}
+			body{background-color: #6dc999;}
+		}
+	</style>
+<body>
+	<audio autoplay="true" hidden="hidden">
+		<source src="audio.mp3" type="audio/mpeg">
+	</audio>
+	<!-- <audio controls class="video" autoplay="true">
+		<source src="audio.mp3" type="audio/mpeg"></audio> -->
+	<img class="duck" src="duck.png">
+	<img class="duck_one" src="duck1.png">
+	<img class="duck_two" src="duck2.png">
+	<img class="duck_three" src="duck3.png">
+	<img class="duck_four" src="duck44.png">
+	<img class="duck_five" src="duck55.png">
+	<img class="duck_six" src="duck6.png">
+	
+	
+</body>
+</html>
